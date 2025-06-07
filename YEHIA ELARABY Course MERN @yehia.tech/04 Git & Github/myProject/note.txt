@@ -1,0 +1,230 @@
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project
+λ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in D:/┘à╪ش┘╪» ╪ش╪»┘è╪»/Windsurf/Yehia Tech/Course MERN/my-project/.git/
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project (master)
+λ
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project>git init
+Reinitialized existing Git repository in D:/مجلد جديد/Windsurf/Yehia Tech/Course MERN/my-project/.git/
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project>git config user.name "Rebhe Ibrahim"
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project>git config user.email "rebheibrahim@gmail.com"
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project>git config --global user.name "Rebhe Ibrahim"
+
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git -v
+git version 2.49.0.windows.1
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.txt
+        note.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git add a.txt
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        note.txt
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git commit -m "added new file a.txt"
+[master (root-commit) f6c0a15] added new file a.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.txt
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        note.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        note.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git log -v     
+commit f6c0a159e3de5c8169bb8deaf813f5507576d819 (HEAD -> master)
+Author: Rebhe Ibrahim <rebheibrahim@gmail.com>
+Date:   Thu Jun 5 22:45:30 2025 +0300
+
+    added new file a.txt
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project>
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git add a.txt
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   a.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        note.txt
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git commit -m "Added new line message"
+[master fb2e1e2] Added new line message
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git log -v
+commit fb2e1e29ded52f3dcea55ef00b93e21500921e30 (HEAD -> master)
+Author: Rebhe Ibrahim <rebheibrahim@gmail.com>
+Date:   Thu Jun 5 23:03:40 2025 +0300
+
+    Added new line message
+
+commit f6c0a159e3de5c8169bb8deaf813f5507576d819
+Author: Rebhe Ibrahim <rebheibrahim@gmail.com>
+Date:   Thu Jun 5 22:45:30 2025 +0300
+
+    added new file a.txt
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git checkout f6c0a159e3de5c8169bb8deaf813f5507576d819
+Note: switching to 'f6c0a159e3de5c8169bb8deaf813f5507576d819'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at f6c0a15 added new file a.txt
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git checkout fb2e1e29ded52f3dcea55ef00b93e21500921e30
+Previous HEAD position was f6c0a15 added new file a.txt
+HEAD is now at fb2e1e2 Added new line message
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git checkout master
+Switched to branch 'master'
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> 
+
+========================== <<< Part 2 >>> ==========================
+
+git remote add origin <CloneURL>
+git branch -M main
+git status
+git remote
+git remote -v
+git push -u origin main
+git push --all origin
+git push
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git remote add origin https://github.com/rebhi-2002/my-project.git
+error: remote origin already exists.
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git branch -M main
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git status
+On branch main
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   aa.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.txt
+        deleted:    aa.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        note.txt
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git remote
+origin
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git remote -v
+origin  https://github.com/rebhi-2002/my-project.git (fetch)
+origin  https://github.com/rebhi-2002/my-project.git (push)
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git push -u origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/rebhi-2002/my-project/pull/new/main
+remote:
+To https://github.com/rebhi-2002/my-project.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git push --all origin
+Everything up-to-date
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git push
+Everything up-to-date
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> 
+
+git fetch
+git status
+git pull
+git fetch
+git status
+
+git clone <URL Repository Remote>
+git status
+git log -v
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> git log -v
+commit fb2e1e29ded52f3dcea55ef00b93e21500921e30 (HEAD -> main, origin/main)
+Author: Rebhe Ibrahim <rebheibrahim@gmail.com>
+Date:   Thu Jun 5 23:03:40 2025 +0300
+
+    Added new line message
+
+commit f6c0a159e3de5c8169bb8deaf813f5507576d819
+Author: Rebhe Ibrahim <rebheibrahim@gmail.com>
+Date:   Thu Jun 5 22:45:30 2025 +0300
+
+    added new file a.txt
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\my-project> 
