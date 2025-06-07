@@ -1,0 +1,95 @@
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\E-Commerce> npm init -y
+Wrote to D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\E-Commerce\package.json:
+
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": ""
+}
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\E-Commerce\package.json:
+>> package.json:
+  "scripts": {
+    "dev": "nodemon"
+  },
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\E-Commerce> npm i express mongoose typescript
+
+added 84 packages, and audited 85 packages in 13s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\E-Commerce> npm i --save-dev nodemon ts-node 
+
+added 46 packages, and audited 131 packages in 9s
+
+19 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\E-Commerce> npx tsc --init
+
+Created a new tsconfig.json with:                                                                                
+                                                                                                              TS 
+  target: es2016
+  module: commonjs
+  strict: true
+  esModuleInterop: true
+  skipLibCheck: true
+  forceConsistentCasingInFileNames: true
+
+
+You can learn more at https://aka.ms/tsconfig
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\E-Commerce> 
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\E-Commerce\tsconfig.json:
+>> tsconfig.json:
+  {
+    "compilerOptions": {...},
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+  }
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\E-Commerce> npm i --save-dev @types/express
+
+added 10 packages, and audited 141 packages in 6s
+
+19 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\E-Commerce\nodemon.json:
+>> nodemon.json:
+  {
+    "watch": ["src"],
+    "ext": ".ts,.js",
+    "ignore": [],
+    "exec": "ts-node ./src/index.ts"
+  }
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\E-Commerce> npm run dev
+
+> e-commerce@1.0.0 dev
+> nodemon
+
+[nodemon] 3.1.10
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): src\**\*
+[nodemon] watching extensions: ts,js
+[nodemon] starting `ts-node ./src/index.ts`
+Server is running at: http://localhost:3001
+Mongo connected!

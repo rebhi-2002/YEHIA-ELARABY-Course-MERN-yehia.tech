@@ -1,0 +1,92 @@
+cmd: wmic cpu get Name,NumberOfCores,NumberOfLogicalProcessors,MaxClockSpeed
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\
+λ npm create vite@latest
+
+> npx
+> create-vite
+
+│
+◇  Project name:
+│  student-list
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  TypeScript
+│
+◇  Scaffolding project in D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\student-list...
+│
+└  Done. Now run:
+
+  cd student-list
+  npm install
+  npm run dev
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\student-list
+λ npm install
+
+added 189 packages, and audited 190 packages in 2m
+
+48 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\student-list
+λ npm install @mui/material @emotion/react @emotion/styled
+
+added 55 packages, and audited 245 packages in 25s
+
+60 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\student-list
+λ npm run dev
+
+> student-list@0.0.0 dev
+> vite
+
+
+  VITE v6.3.5  ready in 2556 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express (express@1.0.0)
+λ npm i cors
+
+added 2 packages, and audited 143 packages in 5s
+
+19 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express (express@1.0.0)
+λ npm i --save-dev @types/cors
+
+added 1 package, and audited 144 packages in 5s
+
+19 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express (express@1.0.0)
+λ npm run dev
+
+> express@1.0.0 dev
+> nodemon
+
+[nodemon] 3.1.10
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): src\**\*
+[nodemon] watching extensions: ts,js
+[nodemon] starting `ts-node ./src/index.ts`
+Running on port 5000
+Connected!

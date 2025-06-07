@@ -1,0 +1,178 @@
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project
+λ ls
+express/  react/  student-list/
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project
+λ cd express\
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express
+λ npm init -y
+Wrote to D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express\package.json:
+
+{
+  "name": "express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": ""
+}
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express (express@1.0.0)
+λ npm i express
+
+added 66 packages, and audited 67 packages in 21s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express (express@1.0.0)
+λ npm i typescript
+
+added 1 package, and audited 68 packages in 33s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express (express@1.0.0)
+λ npx tsc --init
+
+Created a new tsconfig.json with:
+                                                                                                                     TS
+  target: es2016
+  module: commonjs
+  strict: true
+  esModuleInterop: true
+  skipLibCheck: true
+  forceConsistentCasingInFileNames: true
+
+
+You can learn more at https://aka.ms/tsconfig
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express (express@1.0.0)
+λ npm i --save-dev @types/express
+
+added 12 packages, and audited 80 packages in 5m
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+----------
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express> npm run build
+
+> express@1.0.0 build
+> tsc
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express> npm run start
+
+> express@1.0.0 start
+> node dist/index.js
+
+Running on port 5000
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express> npm i --save-dev nodemon
+
+added 27 packages, and audited 107 packages in 22s
+
+18 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express> npm i --save-dev ts-node
+
+added 17 packages, and audited 124 packages in 3m
+
+18 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express> npm run dev
+
+> express@1.0.0 dev
+> nodemon
+
+[nodemon] 3.1.10
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): src\**\*
+[nodemon] watching extensions: ts,js
+[nodemon] starting `ts-node ./src/index.ts`
+Running on port 5000
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express> npm run dev
+
+> express@1.0.0 dev
+> nodemon
+
+[nodemon] 3.1.10
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): src\**\*
+[nodemon] watching extensions: ts,js
+[nodemon] starting `ts-node ./src/index.ts`
+Running on port 5000
+[nodemon] restarting due to changes...
+[nodemon] starting `ts-node ./src/index.ts`
+Running on port 5000
+
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express> npm i mongoose
+npm error code ECONNRESET
+npm error syscall read
+npm error errno -4077
+npm error network read ECONNRESET
+npm error network This is a problem related to network connectivity.
+npm error network In most cases you are behind a proxy or have bad network settings.
+npm error network
+npm error network If you are behind a proxy, please make sure that the
+npm error network 'proxy' config is set properly.  See: 'npm help config'
+npm error A complete log of this run can be found in: C:\Users\rebhi\AppData\Local\npm-cache\_logs\2025-05-31T19_47_21_904Z-debug-0.log
+PS D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express> 
+
+D:\مجلد جديد\Windsurf\Yehia Tech\Course MERN\project\express (express@1.0.0)
+λ npm i mongoose
+
+changed 18 packages, and audited 141 packages in 19s
+
+19 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+package.json:
+=============
+"scripts": {
+  "build": "tsc",
+  "start": "node dist/index.js",
+  "dev": "nodemon"
+},
+
+nodemon.json:
+=============
+{
+  "watch": ["src"],
+  "ext": ".ts,.js",
+  "ignore": [],
+  "exec": "ts-node ./src/index.ts"
+}
+
+tsconfig.json:
+==============
+{
+  "compilerOptions": {
+    "outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
